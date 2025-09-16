@@ -1,0 +1,15 @@
+meta {
+  name: get
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/vp/ps/get-ticket-management/:ticket_id
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  ticket_id: 71
+}

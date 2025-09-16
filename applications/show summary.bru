@@ -1,0 +1,15 @@
+meta {
+  name: show summary
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{apiHost}}/applications/:app_id/summary
+  body: none
+  auth: inherit
+}
+
+params:path {
+  app_id: 56
+}

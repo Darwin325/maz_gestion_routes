@@ -1,0 +1,21 @@
+meta {
+  name: add member
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{apiHost}}/vp/ps/unions/:union_id/add-member
+  body: json
+  auth: inherit
+}
+
+params:path {
+  union_id: 
+}
+
+body:json {
+  {
+    "user_id": 6329
+  }
+}

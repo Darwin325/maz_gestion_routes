@@ -1,0 +1,15 @@
+meta {
+  name: update count users
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{apiHost}}/vp/ps/count-users-approved/:app_id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  app_id: 60
+}

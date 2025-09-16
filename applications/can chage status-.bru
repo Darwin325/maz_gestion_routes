@@ -1,0 +1,15 @@
+meta {
+  name: can chage status?
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{apiHost}}/applications/:app_id/can-change-status
+  body: none
+  auth: inherit
+}
+
+params:path {
+  app_id: 54
+}

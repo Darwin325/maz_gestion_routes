@@ -1,0 +1,15 @@
+meta {
+  name: app step
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{apiHost}}/applications/step?application_id=55
+  body: formUrlEncoded
+  auth: none
+}
+
+params:query {
+  application_id: 55
+}

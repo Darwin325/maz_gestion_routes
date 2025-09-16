@@ -1,0 +1,18 @@
+meta {
+  name: all applications
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{apiHost}}/applications
+  body: none
+  auth: none
+}
+
+params:query {
+  ~filters[has_ticket]: national
+  ~filters[status]: ps_approved
+  ~filters[city]: interna
+  ~page: 3
+}

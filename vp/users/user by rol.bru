@@ -1,0 +1,15 @@
+meta {
+  name: user by rol
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/vp/core/get_employees/:role
+  body: none
+  auth: none
+}
+
+params:path {
+  role: ps_admin
+}

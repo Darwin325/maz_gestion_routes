@@ -1,0 +1,16 @@
+meta {
+  name: update status
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{apiHost}}/applications/approve
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  application_id: 33
+  approve: true
+}

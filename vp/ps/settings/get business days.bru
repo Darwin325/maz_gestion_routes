@@ -1,0 +1,15 @@
+meta {
+  name: get business days
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/vp/ps/settings/business-days/:ticket_type
+  body: none
+  auth: none
+}
+
+params:path {
+  ticket_type: national
+}

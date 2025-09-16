@@ -1,0 +1,26 @@
+meta {
+  name: save by period
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{apiHost}}/vp/ps/update-or-create-conventional-periods-record
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "years": [
+      {
+        "initial_year": "2026-01-01",
+        "end_year": "2027-01-01",
+        "days_amount": 250,
+        "national_ticket_amount": 50,
+        "international_ticket_amount": 10,
+        "conventional_period": 18
+      }
+    ]
+  }
+}

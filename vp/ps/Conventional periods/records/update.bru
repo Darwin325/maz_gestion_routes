@@ -1,0 +1,31 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{apiHost}}/vp/ps/update-conventional-periods-record/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 9
+}
+
+body:json {
+  {
+    "years": [
+      {
+        "initial_year": "2024-01-01",
+        "end_year": "2025-01-01",
+        "days_amount": 250,
+        "national_ticket_amount": 50,
+        "international_ticket_amount": 13,
+        "conventional_period": 18,
+        "id": 12
+      }
+    ]
+  }
+}

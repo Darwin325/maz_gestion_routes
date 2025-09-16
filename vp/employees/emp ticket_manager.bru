@@ -1,0 +1,15 @@
+meta {
+  name: emp ticket_manager
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/vp/ps/emp-ticket-manager/:app_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  app_id: 56
+}

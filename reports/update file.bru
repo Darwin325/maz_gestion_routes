@@ -1,0 +1,16 @@
+meta {
+  name: update file
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/reports
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  data[0][name]: 10
+  data[0][value]: @file(C:\Users\darwi\Downloads\user_unions.xlsx)
+}

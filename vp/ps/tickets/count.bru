@@ -1,0 +1,17 @@
+meta {
+  name: count
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/vp/ps/tickets/count?society=1&union_id=1&start_date=2025-07-10
+  body: json
+  auth: none
+}
+
+params:query {
+  society: 1
+  union_id: 1
+  start_date: 2025-07-10
+}

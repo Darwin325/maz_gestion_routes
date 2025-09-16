@@ -1,0 +1,19 @@
+meta {
+  name: next status
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{apiHost}}/applications/type_next_statuses/:app_type?current_status_id=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  current_status_id: 0
+}
+
+params:path {
+  app_type: 1
+}

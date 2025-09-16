@@ -1,0 +1,24 @@
+meta {
+  name: save
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ps/save-ticket-management/:app_id
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  app_id: 56
+}
+
+body:multipart-form {
+  price: 250000
+  purchase_date: 2025-06-21
+  airline: 2
+  ticket: 72
+  ticket_file: @file(C:\Users\darwi\Documents\evidencia-cartas.pdf)
+  ~additional_info: Razón o motivo
+}

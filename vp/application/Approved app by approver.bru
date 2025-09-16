@@ -1,0 +1,52 @@
+meta {
+  name: Approved app by approver
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{apiHost}}/vp/core/save_requests
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "employee_data": [
+          {
+              "employee_id": "38601018",
+              "application_employee_id": 273,
+              "days": [
+                  {
+                      "id": 494,
+                      "initial_status": "approved",
+                      "day": "2025-07-15"
+                  },
+                  {
+                      "id": 495,
+                      "initial_status": "approved",
+                      "day": "2025-07-16"
+                  },
+                  {
+                      "id": 496,
+                      "initial_status": "rejected",
+                      "day": "2025-07-17"
+                  }
+              ],
+              "tickets": [
+                  {
+                      "id": 37,
+                      "initial_status": "rejected",
+                      "type": "national"
+                  }
+              ],
+              "reasons": {
+                  "reason_reject_days": "motivo días prueba comm",
+                  "reason_reject_tickets": "motivo tickets"
+              }
+          }
+      ],
+      "additional_comments": "adicional prueba comm",
+      "application_id": 70
+  }
+}

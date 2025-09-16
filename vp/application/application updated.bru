@@ -1,0 +1,17 @@
+meta {
+  name: application updated
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ps/application-updated
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "application_id": 66
+  }
+}

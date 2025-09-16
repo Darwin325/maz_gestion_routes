@@ -1,0 +1,15 @@
+meta {
+  name: session test
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8001/api/user-session/test
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5Mjk0ODQzLCJpYXQiOjE3MzkyMDg0NDMsImp0aSI6IjE1ZmIxYzRiMTFmOTQyYWY5OTg1ZDU1ZjA4YjBhMGI5IiwidXNlcl9pZCI6MX0.n-xp5M4IL9maloWWDjwOf97J-LQGpi7Y4ZFQa7W23oc
+}

@@ -1,0 +1,57 @@
+meta {
+  name: update
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{apiHost}}/applications/:app_id
+  body: formUrlEncoded
+  auth: none
+}
+
+params:path {
+  app_id: 76
+}
+
+body:text {
+  form_id
+  8
+  data[0][name]
+  ml_process_demandante_type
+  data[0][value]
+  Tercero
+  data[1][name]
+  ml_process_city
+  data[1][value]
+  1735 - Potosí
+  data[2][name]
+  ml_process_demandante_identification
+  data[2][value]
+  3423532
+  data[3][name]
+  ml_process_age
+  data[3][value]
+  31
+  data[4][name]
+  ml_process_fueros
+  data[4][value]
+  Salud
+  data[5][name]
+  ml_process_unions
+  data[5][value]
+  ASMONTACARCOL
+  data[6][name]
+  ml_process_demandante_name
+  data[6][value]
+  Camilo Perdomo
+}
+
+body:form-urlencoded {
+  data[0][name]: ml_process_demandante_type
+  data[0][value]: Empleado
+  data[1][name]: ml_process_city
+  data[1][value]: 1735 - Potosí
+  data[2][name]: ml_process_demandante_identification
+  data[2][value]: 34235311
+}

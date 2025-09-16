@@ -1,0 +1,24 @@
+meta {
+  name: udate
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{apiHost}}/vp/ps/update-ticket-management/:ticket_id
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  ticket_id: 21
+}
+
+body:multipart-form {
+  price: 210000
+  purchase_date: 2025-06-21
+  airline: 2
+  ticket: 71
+  ticket_file: @file(C:\Users\darwi\Documents\Evidencia.pdf)
+  additional_info: Razón o motivo nuevo 33
+}

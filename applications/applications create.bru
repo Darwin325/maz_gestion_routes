@@ -1,0 +1,24 @@
+meta {
+  name: applications create
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/applications/create/:application_type
+  body: json
+  auth: none
+}
+
+params:path {
+  application_type: 36
+}
+
+body:json {
+  {
+     "name_field": [
+       {"user_id": 3, "approver_id": 33},
+       {"user_id": 32, "approver_id": 11}
+     ]
+  }
+}

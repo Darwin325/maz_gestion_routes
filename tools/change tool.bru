@@ -1,0 +1,15 @@
+meta {
+  name: change tool
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{apiHost}}/change-my-current-tool/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 21
+}

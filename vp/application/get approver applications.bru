@@ -1,0 +1,17 @@
+meta {
+  name: get approver applications
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{apiHost}}/vp/ps/approver/get_applications
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~filters[has_ticket]: without_tickets - No
+  ~filters[status]: creating
+  ~filters[status]: ps_approved
+}

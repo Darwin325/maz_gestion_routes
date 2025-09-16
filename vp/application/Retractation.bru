@@ -1,0 +1,30 @@
+meta {
+  name: Retractation
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{apiHost}}/vp/ps/retraction
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "retractions": [
+      {
+        "application_employee_id": 278,
+        "employee_id": 4676,
+        "days": [],
+        "tickets": [
+          {"id": 42, "status": "approved"}
+        ],
+         "reasons": {
+            "reason_days": "",
+            "reason_tickets": "Es necesario que el usuario esta allá"
+        }
+      }
+    ]
+  }
+}

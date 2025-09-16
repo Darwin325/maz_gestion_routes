@@ -1,0 +1,6 @@
+script:pre-request {
+  // Set auth token
+  console.log(bru.getEnvVar('api_token'))
+  req.setHeader('Authorization', 'Bearer ' + bru.getVar('api_token'))
+  // req.setHeader('Authorization', 'Bearer ' + 'lVdubINCFX2F4Tlz11XB1Ih4sRQzSCrCNKax6e3vq6Dxt6vqNukp8S9ARCNf')
+}

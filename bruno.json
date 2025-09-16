@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "maz_gestion",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

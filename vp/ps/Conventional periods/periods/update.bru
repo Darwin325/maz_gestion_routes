@@ -1,0 +1,24 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{apiHost}}/vp/ps/update-conventional-periods/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 24
+}
+
+body:json {
+  {
+    "society": 3,
+    "union": 4,
+    "initial_date": "2027-09-01",
+    "end_date": "2037-08-23"
+  }
+}

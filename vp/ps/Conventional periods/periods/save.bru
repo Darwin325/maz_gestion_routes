@@ -1,0 +1,20 @@
+meta {
+  name: save
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ps/conventional-periods
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "society": 3,
+    "union": 4,
+    "initial_date": "2027-09-01",
+    "end_date": "2037-08-23"
+  }
+}

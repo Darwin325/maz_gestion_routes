@@ -1,0 +1,17 @@
+meta {
+  name: get paginated
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/vp/ps/unions/paginated?filters[search]=SINALTRAEMBAV
+  body: none
+  auth: inherit
+}
+
+params:query {
+  filters[search]: SINALTRAEMBAV
+  ~page: 2
+  ~per_page: 10
+}

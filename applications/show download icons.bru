@@ -1,0 +1,15 @@
+meta {
+  name: show download icons
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{apiHost}}/vp/ps/application/show-donwnload-icons/:app_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  app_id: 60
+}

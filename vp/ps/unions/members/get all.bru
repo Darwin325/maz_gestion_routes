@@ -1,0 +1,19 @@
+meta {
+  name: get all
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/vp/ps/unions/:union_id/members?filters[search]=juan
+  body: none
+  auth: inherit
+}
+
+params:query {
+  filters[search]: juan
+}
+
+params:path {
+  union_id: 5
+}

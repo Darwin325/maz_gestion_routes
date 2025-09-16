@@ -1,0 +1,15 @@
+meta {
+  name: get by period
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/vp/ps/periods/:period_id/records
+  body: none
+  auth: inherit
+}
+
+params:path {
+  period_id: 1
+}

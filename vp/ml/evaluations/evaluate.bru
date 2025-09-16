@@ -1,0 +1,29 @@
+meta {
+  name: evaluate
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ml/evaluate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "process_id": 76, 
+      "impact": [ // ids de los selects type p
+          48,
+          54
+      ],
+      "probability": [ // ids de los selects type i
+          4,
+          8,
+          14,
+          26,
+          33,
+          42
+      ]
+  }
+}

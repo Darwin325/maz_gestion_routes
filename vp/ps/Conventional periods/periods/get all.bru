@@ -1,0 +1,19 @@
+meta {
+  name: get all
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/vp/ps/all-conventional-periods?filters[society]=Bavaria S.A.
+  body: none
+  auth: inherit
+}
+
+params:query {
+  filters[society]: Bavaria S.A.
+  ~filters[search]: SINT
+  ~filters[union]: SINTRA
+  ~per_page: 3
+  ~page: 2
+}

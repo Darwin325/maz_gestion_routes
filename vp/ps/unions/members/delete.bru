@@ -1,0 +1,16 @@
+meta {
+  name: delete
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{apiHost}}/vp/ps/unions/:union_id/member/:user_id/delete
+  body: none
+  auth: inherit
+}
+
+params:path {
+  user_id: 6329
+  union_id: 3
+}

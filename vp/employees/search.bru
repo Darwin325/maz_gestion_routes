@@ -1,0 +1,15 @@
+meta {
+  name: search
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{apiHost}}/vp/core/search-employees?search=maria
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: maria
+}

@@ -1,0 +1,15 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/user-session/sign-in
+  body: json
+  auth: none
+}
+
+vars:post-response {
+  api_token: res.body.result.token
+}

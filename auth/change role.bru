@@ -1,0 +1,15 @@
+meta {
+  name: change role
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{apiHost}}/change-my-role/:role_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  role_id: 74
+}

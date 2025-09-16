@@ -1,0 +1,17 @@
+meta {
+  name: ml
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/vp/ml/audits
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~filters[search]: 2344354365434
+  ~per_page: 10
+  ~page: 1
+}

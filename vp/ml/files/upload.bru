@@ -1,0 +1,21 @@
+meta {
+  name: upload
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ml/process/:id/files
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  id: 87
+}
+
+body:multipart-form {
+  type: admission_order
+  files: @file(C:\Users\darwi\Documents\PROBLEMA CLIMATICO - copia (2).pdf)
+  files: @file(C:\Users\darwi\Documents\PROBLEMA CLIMATICO - copia (5).pdf)
+}

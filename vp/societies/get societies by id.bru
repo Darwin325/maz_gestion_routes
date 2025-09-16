@@ -1,0 +1,15 @@
+meta {
+  name: get societies by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/vp/core/societies/:bp_id
+  body: none
+  auth: none
+}
+
+params:path {
+  bp_id: 100000004
+}

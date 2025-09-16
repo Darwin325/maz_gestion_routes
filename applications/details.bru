@@ -1,0 +1,15 @@
+meta {
+  name: details
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{apiHost}}/applications/:app_id/detail
+  body: none
+  auth: inherit
+}
+
+params:path {
+  app_id: 64
+}

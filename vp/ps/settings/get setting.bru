@@ -1,0 +1,15 @@
+meta {
+  name: get setting
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/vp/ps/setting/:key
+  body: none
+  auth: none
+}
+
+params:path {
+  key: authorize_national_tickets_days
+}

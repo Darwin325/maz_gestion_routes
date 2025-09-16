@@ -1,0 +1,17 @@
+meta {
+  name: Delete app with response
+  type: http
+  seq: 16
+}
+
+put {
+  url: {{apiHost}}/applications/delete-with-response
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "application_id": [74]
+  }
+}

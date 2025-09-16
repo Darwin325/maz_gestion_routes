@@ -1,0 +1,15 @@
+meta {
+  name: get employees by requets
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/vp/ps/get_employee_requests/:app_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  app_id: 56
+}

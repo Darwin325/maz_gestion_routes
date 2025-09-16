@@ -1,0 +1,15 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/audits?model_type=form_responses_processes
+  body: none
+  auth: inherit
+}
+
+params:query {
+  model_type: form_responses_processes
+}

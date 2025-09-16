@@ -1,0 +1,33 @@
+meta {
+  name: store
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{apiHost}}/applications
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  data[0][name]: ps_request_date
+  data[0][value]: 2025-02-17
+  form_id: 1
+  data[1][name]: ps_request_bp_name
+  data[1][value]: 100000001 - BP
+  data[2][name]: ps_request_society
+  data[2][value]: Bavaria S.A.
+  data[3][name]: ps_request_has_ticket
+  data[3][value]: national
+  data[4][name]: ps_request_city_destination
+  data[4][value]: 2 - Acacías
+  data[5][name]: ps_request_start_date
+  data[5][value]: 2025-03-20
+  data[6][name]: ps_request_end_date
+  data[6][value]: 2025-03-23
+  data[7][name]: ps_request_motive
+  data[7][value]: Motivo de la solcitud
+  data[8][name]: ps_request_additional_info
+  data[8][value]: Información adional
+}

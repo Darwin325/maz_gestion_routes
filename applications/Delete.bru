@@ -1,0 +1,17 @@
+meta {
+  name: Delete
+  type: http
+  seq: 15
+}
+
+put {
+  url: {{apiHost}}/applications/delete_applications
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "application_id": [70]
+  }
+}

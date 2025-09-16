@@ -1,0 +1,18 @@
+meta {
+  name: update fields
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/tp/update-fields/ps_request_bp_name
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "bp_id": "100000002",
+    "application_id": 52
+  }
+}
