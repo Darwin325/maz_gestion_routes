@@ -1,0 +1,15 @@
+meta {
+  name: file types
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{apiHost}}/vp/ml/process/:process_id/file_types
+  body: none
+  auth: inherit
+}
+
+params:path {
+  process_id: 87
+}

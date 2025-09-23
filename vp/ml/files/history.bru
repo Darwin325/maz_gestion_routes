@@ -1,0 +1,19 @@
+meta {
+  name: history
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{apiHost}}/vp/ml/process/:process_id/history
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~per_page: 1
+}
+
+params:path {
+  process_id: 87
+}

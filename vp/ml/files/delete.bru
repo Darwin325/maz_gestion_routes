@@ -1,0 +1,21 @@
+meta {
+  name: delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{apiHost}}/vp/ml/process/:field_id/delete
+  body: json
+  auth: inherit
+}
+
+params:path {
+  field_id: 20
+}
+
+body:json {
+  {
+    "reason": "Duplicado nuevo 2"
+  }
+}

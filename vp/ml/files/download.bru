@@ -1,0 +1,21 @@
+meta {
+  name: download
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{apiHost}}/vp/ml/process/:field_id/download
+  body: json
+  auth: inherit
+}
+
+params:path {
+  field_id: 12
+}
+
+body:json {
+  {
+    "reason": "Duplicado"
+  }
+}
