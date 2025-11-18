@@ -1,0 +1,18 @@
+meta {
+  name: end date
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ps/validations/ps_request_end_date
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "start_date": "2025-11-10",
+    "end_date": "2025-11-12"
+  }
+}

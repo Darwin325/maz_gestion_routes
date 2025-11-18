@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{apiHost}}/vp/ml/process/:process_id/history
+  url: {{apiHost}}/vp/ml/process/:process_id/:type/history
   body: none
   auth: inherit
 }
@@ -15,5 +15,6 @@ params:query {
 }
 
 params:path {
-  process_id: 87
+  type: demand
+  process_id: 106
 }

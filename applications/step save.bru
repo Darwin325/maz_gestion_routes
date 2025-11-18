@@ -1,0 +1,17 @@
+meta {
+  name: step save
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{apiHost}}/applications/step
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "application_id": 118
+  }
+}

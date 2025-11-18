@@ -1,0 +1,19 @@
+meta {
+  name: download
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{apiHost}}/reports/download
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "report_name": "Reporte Litigios",
+  //     "report_name": "Consolidado PS",
+      "filters": {}
+  }
+}

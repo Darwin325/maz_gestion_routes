@@ -1,0 +1,19 @@
+meta {
+  name: proof paymnet
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/emb/booking/proof-payment/:app_id
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  app_id: 118
+}
+
+body:multipart-form {
+  file: @file(C:\Users\darwi\Pictures\Screenshots\Captura de pantalla 2025-01-30 102702.png)
+}

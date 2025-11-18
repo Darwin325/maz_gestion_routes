@@ -1,0 +1,21 @@
+meta {
+  name: get seasons
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/emb/booking/season-dates/:date/:season
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:query {
+  ~date: 2025-10-01
+  ~season: Alta
+}
+
+params:path {
+  season: Alta
+  date: 2025-10-01
+}

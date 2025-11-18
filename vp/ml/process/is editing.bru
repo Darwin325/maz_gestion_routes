@@ -1,0 +1,21 @@
+meta {
+  name: is editing
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{apiHost}}/vp/ml/process/:id/is-editing
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 105
+}
+
+body:json {
+  {
+    "response": "yes"
+  }
+}

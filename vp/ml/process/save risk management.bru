@@ -1,0 +1,24 @@
+meta {
+  name: save risk management
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{apiHost}}/vp/ml/process/:id/risk-management
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 97
+}
+
+body:json {
+  {
+    "actions": "c",
+    "risk_type": 3,
+    "objective": "management_risk",
+    "monitoring": "Procedimiento"
+  }
+}

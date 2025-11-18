@@ -1,0 +1,17 @@
+meta {
+  name: has places
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/emb/booking/has-available-rooms/:start_date/:end_date/:season
+  body: none
+  auth: inherit
+}
+
+params:path {
+  season: baja
+  end_date: 2025-10-31
+  start_date: 2025-10-19
+}

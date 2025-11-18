@@ -5,14 +5,13 @@ meta {
 }
 
 post {
-  url: {{apiHost}}/tp/update-fields/ps_request_bp_name
+  url: {{apiHost}}/tp/update-fields/ps_request_has_ticket
   body: json
   auth: none
 }
 
 body:json {
   {
-    "bp_id": "100000002",
-    "application_id": 52
+      "ticket_type": "national - Si, con tiquetes nacionales"
   }
 }

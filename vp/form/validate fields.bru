@@ -1,0 +1,17 @@
+meta {
+  name: validate fields
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ml/validate-ml-number
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ml_process_demandante_identification": "3423532"
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: get
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiHost}}/emb/booking/app/:app_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  app_id: 102
+}

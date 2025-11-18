@@ -1,0 +1,28 @@
+meta {
+  name: contol analisis
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiHost}}/vp/ml/process/:id/control-analysis
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 97
+}
+
+body:json {
+  {
+    "type": "c",
+    "description": "Descripción",
+    "objective": "Objetvo",
+    "procedure": "Procedimiento",
+    "evidence": "Evidencia",
+    "periodicity": "men",
+    "evaluation": "eft",
+    "position": 13
+  }
+}

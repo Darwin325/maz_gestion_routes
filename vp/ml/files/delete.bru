@@ -4,14 +4,14 @@ meta {
   seq: 3
 }
 
-delete {
+post {
   url: {{apiHost}}/vp/ml/process/:field_id/delete
   body: json
   auth: inherit
 }
 
 params:path {
-  field_id: 20
+  field_id: 24
 }
 
 body:json {
