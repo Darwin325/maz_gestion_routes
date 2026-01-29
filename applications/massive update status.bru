@@ -1,0 +1,19 @@
+meta {
+  name: massive update status
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{apiHost}}/applications/approve-massive
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "application_id": [118],
+    "apporve": true,
+    "comment": null
+  }
+}

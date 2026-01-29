@@ -1,0 +1,15 @@
+meta {
+  name: gift
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiHost}}/emb/has-a-gift/:date
+  body: none
+  auth: inherit
+}
+
+params:path {
+  date: 2026-01-01
+}

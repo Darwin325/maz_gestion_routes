@@ -1,0 +1,11 @@
+meta {
+  name: cards approver
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{apiHost}}/vp/ps/approver/get_applications-count
+  body: none
+  auth: inherit
+}

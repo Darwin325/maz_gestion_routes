@@ -1,0 +1,15 @@
+meta {
+  name: room details
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{apiHost}}/emb/booking/room/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
